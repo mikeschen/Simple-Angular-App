@@ -1,0 +1,19 @@
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>TestAngularFromScratch</title>
+    <script src="bower_components/angular/angular.js"></script>
+      <script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+            <script src="bower_components/jquery/dist/jquery.js"></script>
+   <script src="ngapp/app.js"></script>
+   <script src="controllers/homeCtrl.js"></script>
+  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+  <div class="container" ng-app="app">
+    <header ng-include="'templates/nav.html'"></header>
+    <div ui-view></div>
+    <header ng-include="'templates/footer.html'"></header>
+  </body>
+</html>
